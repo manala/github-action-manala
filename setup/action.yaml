@@ -6,5 +6,6 @@ runs:
   using: composite
   steps:
     - name: Set up manala
+      shell: bash
       run: |
         curl -sfL https://raw.githubusercontent.com/manala/manala/main/godownloader.sh | sudo sh -s -- -b /usr/local/bin

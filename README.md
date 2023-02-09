@@ -2,6 +2,8 @@
 
 ## Usage
 
+Setup:
+
 ```yaml
 ...
 - name: Set up manala
