@@ -1,0 +1,9 @@
+name: Manala
+
+description: Manala
+
+runs:
+  using: composite
+  steps:
+    - name: Set up manala
+      uses: setup

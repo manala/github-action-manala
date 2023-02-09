@@ -1,0 +1,10 @@
+name: Manala - Setup
+
+description: Manala - Setup
+
+runs:
+  using: composite
+  steps:
+    - name: Set up manala
+      run: |
+        curl -sfL https://raw.githubusercontent.com/manala/manala/main/godownloader.sh | sudo sh -s -- -b /usr/local/bin
