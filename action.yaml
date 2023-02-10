@@ -12,8 +12,8 @@ runs:
   using: composite
   steps:
     - name: Set up manala
-      uses: ${{ github.action_path }}/setup
+      uses: manala/github-action-manala/setup@v1
     - name: Manala update
-      uses: ${{ github.action_path }}/update
+      uses: manala/github-action-manala/update@v1
       with:
         directory: ${{ inputs.directory }}
