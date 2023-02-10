@@ -2,8 +2,18 @@ name: Manala
 
 description: Manala
 
+inputs:
+  directory:
+    description: Directory
+    required: false
+    default: .
+
 runs:
   using: composite
   steps:
     - name: Set up manala
       uses: setup
+    - name: Manala update
+      uses: update
+      with:
+        directory: ${{ inputs.directory }}
