@@ -3,8 +3,8 @@ name: Manala - Update
 description: Manala - Update
 
 inputs:
-  directory:
-    description: Directory
+  dir:
+    description: Working directory
     required: false
     default: .
 
@@ -13,6 +13,6 @@ runs:
   steps:
     - name: Manala update
       shell: bash
-      working-directory: ${{ inputs.directory }}
+      working-directory: ${{ inputs.dir }}
       run: |
         manala update

@@ -3,8 +3,8 @@ name: Manala
 description: Manala
 
 inputs:
-  directory:
-    description: Directory
+  dir:
+    description: Working directory
     required: false
     default: .
 
@@ -16,4 +16,4 @@ runs:
     - name: Manala update
       uses: manala/github-action-manala/update@v1
       with:
-        directory: ${{ inputs.directory }}
+        dir: ${{ inputs.dir }}
